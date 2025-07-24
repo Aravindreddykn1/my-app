@@ -556,43 +556,61 @@ body {
   100% { background-position: 0% 50%; }
 }
 
-@media (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-  
-  .title {
-    font-size: 1rem;
-  }
-  
-  .section h2 {
-    font-size: 2.5rem;
-  }
-  
-  .App-nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .App-nav li {
-    margin: 0.5rem 0;
-  }
-
-  .experience-grid, .skills-grid, .certifications-grid {
-    grid-template-columns: 1fr;
-  }
+/* Profile Image Styles */
+.profile-container {
+  margin-bottom: 2rem;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 2rem;
 }
 
-@media (max-width: 480px) {
-  .section {
-    padding: 0.5rem;
-  }
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--accent1);
+  box-shadow: 0 0 20px rgba(255, 0, 102, 0.3);
+  transition: all 0.3s ease;
+}
 
-  .hero-content h1 {
-    font-size: 1.5rem;
-  }
+.profile-image:hover {
+  transform: scale(1.05);
+  border-color: var(--accent2);
+  box-shadow: 0 0 30px rgba(0, 255, 187, 0.4);
+}
 
-  .experience-card, .skill-category, .cert-card {
-    padding: 1rem;
+/* Enhance hero content for image */
+.hero-content {
+  text-align: center;
+  padding: 3rem;
+  border-radius: 20px;
+  background: rgba(17, 17, 17, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  max-width: 600px;
+}
+
+/* Add glow effect */
+@keyframes profileGlow {
+  0% { box-shadow: 0 0 20px rgba(255, 0, 102, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(0, 255, 187, 0.4); }
+  100% { box-shadow: 0 0 20px rgba(255, 0, 102, 0.3); }
+}
+
+.profile-container:hover .profile-image {
+  animation: profileGlow 2s infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .profile-container {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .hero-content {
+    padding: 2rem;
   }
 }
