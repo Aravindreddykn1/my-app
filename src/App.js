@@ -21,7 +21,7 @@ function App() {
           <p className="title">Supplier Master Data Analyst at Baker Hughes | AI/ML Engineer</p>
           <div className="social-links">
             <a href="https://www.linkedin.com/in/aravind-reddy-k-n-471162344/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="mailto:kn.aravindreddy@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+            <a href="mailto:aranarayanareddy@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
           </div>
         </div>
       </header>
