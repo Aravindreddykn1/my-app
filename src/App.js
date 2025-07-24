@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import profileImage from './images/profile.jpg';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
 
       <header className="App-header" id="home">
         <div className="hero-content">
+          <div className="profile-container">
+            <img src={profileImage} alt="Aravind Reddy K N" className="profile-image" />
+          </div>
           <h1>ARAVIND REDDY K N</h1>
           <p className="title">Supplier Master Data Analyst at Baker Hughes | AI/ML Engineer</p>
           <div className="social-links">
